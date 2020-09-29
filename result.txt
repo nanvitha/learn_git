@@ -1,0 +1,154 @@
+    2  sudo apt-get install git -y
+    3  git --version
+    7  git config --global user.name "nanvitha"
+    8  git config --global user.email "anvitha.n25@gmail.com"
+    9  git config --list
+   10  find . -name ".gitconfig"
+   11  gvim ./gitconfig
+   12  gedit .gitconfig
+   14  mkdir git_workspace
+   16  cd git_workspace/
+   17  git clone https://github.com/nanvitha/coursera.git
+   22  git status
+   23  git add testfile 
+   24  git status
+   25  git commit -m "example" testfile
+   26  git push -u origin master
+   56  ls ../git_workspace/
+   57  ls ../git_workspace/coursera/
+   58  mv test_file.c ../git_workspace/coursera/
+   59  cd ../git_workspace/coursera/
+   61  git status
+   62  git add test_file.c 
+   63  git status
+   64  git commit -m "c file test" test_file.c 
+   65  git push -u origin master
+  160  git clone https://github.com/afosdick/ese-coursera-course1.git
+  489  git 
+  490  git version
+  491  find . -name ".gitconfig" 
+  492  gvim ./learn/.gitconfig 
+  493  vim ./learn/.gitconfig 
+  504  cd git_workspace/
+  506  mkdir learn_git
+  508  cd learn_git/
+  511  git status
+  515  cd learn_git/
+  518  git add .
+  521  git status
+  524  git status
+  527  mv learn_git/ ../
+  529  git clone https://github.com/nanvitha/learn_git.git
+  531  mv ../learn_git/index.html learn_git/
+  532  ls learn_git/
+  533  git status
+  534  cd learn_git/
+  535  git status
+  536  git add .
+  537  git status
+  538  git commit -m "revision one"
+  539  git status
+  540  git push -u origin master
+  541  git status
+  548  mv learn_git/ learn_git1/
+  550  cd learn_git1/
+  552  cp ../git_workspace/learn_git/index.html .
+  554  git init
+  555  git staus
+  556  git status
+  557  git add index.html 
+  558  git status
+  559  git log
+  560  git commit -m "revision one"
+  561  git log
+  563  git status
+  564  git add .
+  565  git status
+  566  git commit -m "revision two"
+  567  git status
+  568  git log
+  569  git push -u origin master
+  573  cd git_workspace/learn_git/
+  578  git status
+  579  git add .
+  580  git status
+  581  git log
+  582  git commit -m "revision two"
+  583  git log
+  584  git push -u origin master
+  585  git status
+  591  git status
+  593  git status
+  598  git add .
+  599  git status
+  600  git commit -m "check file deletion"
+  601  git status
+  602  git push -u origin master
+  603  git log
+  608  git status
+  609  git add .
+  610  git status
+  612  git checkout index_test.html
+  614  git status
+  619  git status
+  621  git status
+  623  git restore --staged index1.html
+  624  git checkout index_test.html
+  628  git log
+  634  git status
+  635  git add .
+  636  git status
+  637  git restore --staged index_test1.html
+  638  git status
+  640  git commit -m "update for revision two"
+  641  git log
+  642  git push -u origin master
+  643  git status
+  644  git add .
+  645  git status
+  646  git commit -m "updated rev two"
+  647  git status
+  648  git push -u origin master
+  649  git status
+  652  git status
+  654  git restore index_test1.html
+  659  git status
+  660  git rm index_test1.html 
+  661  git status
+  663  git restore --staged index_test1.html
+  664  git staus
+  665  git status
+  667  git restore index_test1.html
+  669  git status
+  671  git log
+  672  git checkout a27db4e2052cae99ca0e0329a5647ee4c805c73f
+  673  git log
+  674  git branch
+  675  git checkout master
+  676  git status
+  678  git branch
+  679  git log
+  680  git checkout a27db4e2052cae99ca0e0329a5647ee4c805c73f
+  681  git branch
+  682  git checkout master
+  683  git log
+  684  git switch -c <new-branch-name>
+  685  git branch alternate a27db4e
+  686  git branch
+  687  git log
+  690  git status
+  691  git add .
+  692  git commit -m "alternate check"
+  693  git push -u origin master
+  694  git branch
+  695  git log
+  696  git status
+  699  git branch
+  700  git branch alternate 
+  701  git checkout alternate
+  702  git log
+  704  git status
+  705  git branch master
+  706  git checkout master
+  707  git log
+  710  history | grep "git *" >result.txt
